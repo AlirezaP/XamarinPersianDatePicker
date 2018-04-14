@@ -1,4 +1,4 @@
-# XamarinPersianDatePicker
+# XamarinPersianDatePicker(Xamarin Forms)
 var res = await Helper.Dialogs.GetDateWithPersianDatePicker();<br/>
             //res.Year<br/>
             //res.Month<br/>
