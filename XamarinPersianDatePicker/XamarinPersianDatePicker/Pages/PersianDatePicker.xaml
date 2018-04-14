@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinPersianDatePicker.Pages.PersianDatePicker">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="yearPicker" HorizontalOptions="Center"></Picker>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="ماه بعد" x:Name="btnNextMonth" HorizontalOptions="StartAndExpand" Clicked="btnNextMonth_Clicked"/>
+                <Label x:Name="currentMonthName" HorizontalOptions="CenterAndExpand"></Label>
+                <Button Text="ماه قبل" x:Name="btnPreMonth" HorizontalOptions="EndAndExpand" Clicked="btnPreMonth_Clicked"/>
+            </StackLayout>
+
+            <Grid x:Name="PickerGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Text="شنبه" Grid.Row="0" Grid.Column="6"/>
+                <Label VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Text="یکشنبه" Grid.Row="0" Grid.Column="5"/>
+                <Label VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Text="دوشنبه" Grid.Row="0" Grid.Column="4"/>
+                <Label VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Text="سه شنبه" Grid.Row="0" Grid.Column="3"/>
+                <Label VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Text="چهارشنبه" Grid.Row="0" Grid.Column="2"/>
+                <Label VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Text="پنج شنبه" Grid.Row="0" Grid.Column="1"/>
+                <Label VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Text="جمعه" Grid.Row="0" Grid.Column="0"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
